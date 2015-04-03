@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B53573D-DC11-4B5A-9C4C-A79B8C6A2A7D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebServiceForFtp</RootNamespace>
+    <AssemblyName>WebServiceForFtp</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.0.8.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DellRes\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminManagerment\Index.aspx" />
+    <Content Include="AdminManagerment\SubPages\EditUser.aspx" />
+    <Content Include="AdminManagerment\SubPages\UpdateRoles.aspx" />
+    <Content Include="AdminManagerment\UpdateFilesManagerment.aspx" />
+    <Content Include="AdminManagerment\UpdateFilesPub.aspx" />
+    <Content Include="AdminManagerment\UpdateRecord.aspx" />
+    <Content Include="AdminManagerment\UserManagerment.aspx" />
+    <Content Include="AdminManagerment\Welcome.aspx" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="Defult.aspx" />
+    <Content Include="DellRes\Newtonsoft.Json.dll" />
+    <Content Include="favicon.ico" />
+    <Content Include="Login\Login.aspx" />
+    <Content Include="Login\LoginError.aspx" />
+    <Content Include="Service1.asmx" />
+    <Content Include="Source\CSS\bootstrap-table.css" />
+    <Content Include="Source\CSS\bootstrap-theme.css" />
+    <Content Include="Source\CSS\bootstrap-theme.min.css" />
+    <Content Include="Source\CSS\bootstrap.css" />
+    <Content Include="Source\CSS\bootstrap.min.css" />
+    <Content Include="Source\JS\bootstrap-table.js" />
+    <Content Include="Source\JS\bootstrap.js" />
+    <Content Include="Source\JS\bootstrap.min.js" />
+    <Content Include="Source\JS\jquery-1.8.1.js" />
+    <Content Include="UpdateInfo.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="UpdatFileManager.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminManagerment\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManagerment\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManagerment\SubPages\EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManagerment\SubPages\EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManagerment\SubPages\UpdateRoles.aspx.cs">
+      <DependentUpon>UpdateRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManagerment\SubPages\UpdateRoles.aspx.designer.cs">
+      <DependentUpon>UpdateRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManagerment\UpdateFilesManagerment.aspx.cs">
+      <DependentUpon>UpdateFilesManagerment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManagerment\UpdateFilesManagerment.aspx.designer.cs">
+      <DependentUpon>UpdateFilesManagerment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManagerment\UpdateFilesPub.aspx.cs">
+      <DependentUpon>UpdateFilesPub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManagerment\UpdateFilesPub.aspx.designer.cs">
+      <DependentUpon>UpdateFilesPub.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManagerment\UpdateRecord.aspx.cs">
+      <DependentUpon>UpdateRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManagerment\UpdateRecord.aspx.designer.cs">
+      <DependentUpon>UpdateRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManagerment\UserManagerment.aspx.cs">
+      <DependentUpon>UserManagerment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManagerment\UserManagerment.aspx.designer.cs">
+      <DependentUpon>UserManagerment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManagerment\Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManagerment\Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\FileHandler.ashx.cs">
+      <DependentUpon>FileHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\UserManagerHandler.ashx.cs">
+      <DependentUpon>UserManagerHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Defult.aspx.cs">
+      <DependentUpon>Defult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Defult.aspx.designer.cs">
+      <DependentUpon>Defult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileOpteration.cs" />
+    <Compile Include="Login\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginError.aspx.cs">
+      <DependentUpon>LoginError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\LoginError.aspx.designer.cs">
+      <DependentUpon>LoginError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service1.asmx.cs">
+      <DependentUpon>Service1.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdateFileInfo.cs" />
+    <Compile Include="UpdatFileManager.aspx.cs">
+      <DependentUpon>UpdatFileManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdatFileManager.aspx.designer.cs">
+      <DependentUpon>UpdatFileManager.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Source\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FTPMagagerBLL\FTPMagagerBLL.csproj">
+      <Project>{8555633F-44E6-4616-B645-140327516894}</Project>
+      <Name>FTPMagagerBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FtpManagerModal\FtpManagerModal.csproj">
+      <Project>{B27A67AE-CD5E-4B44-9609-40A2C1425108}</Project>
+      <Name>FtpManagerModal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Until\Util.csproj">
+      <Project>{F7EA09A4-88D4-48B3-8DDB-D03291B92756}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ajax\UserManagerHandler.ashx" />
+    <Content Include="Ajax\FileHandler.ashx" />
+    <None Include="Source\CSS\bootstrap-theme.css.map" />
+    <None Include="Source\CSS\bootstrap.css.map" />
+    <None Include="Source\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Source\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="Source\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Source\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Source\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="UpdataFile\UpdateFile5.2.17.zip" />
+    <Content Include="UpdataFile\NET.Reflector.zip" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>18800</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

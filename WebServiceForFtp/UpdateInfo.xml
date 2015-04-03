@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--软件的升级信息配置文件-->
+<updateFileInfo>
+  <!--升级文件的名称-->
+  <fileName>好食好客升级包5.2.17.zip</fileName>
+  <!--升级文件的MD5值-->
+  <fileMd5>3d4251da1dd74080512d1a71f3a0bd9f</fileMd5>
+  <!--软件的最新版本-->
+  <softVersion>v5.0</softVersion>
+  <!--软件升级的创建日期-->
+  <createDate>2015-03-23</createDate>
+  <!--软件升级的FTP地址-->
+  <ftpAddress>ftp://127.0.0.1:21//好食好客升级包5.2.17.zip</ftpAddress>
+  <!--升级包的对路径-->
+  <filePath>UpdataFile/好食好客升级包5.2.17.zip</filePath>
+</updateFileInfo>
